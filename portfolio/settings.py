@@ -92,14 +92,7 @@ if DEBUG:
     }
 else:
     DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": "Personal Portfolio",
-            "USER": "personal_portfolio_lmi5_user",
-            "PASSWORD": "BDUymuhrMmXrgOvTHbZdNl2kM25NtzSV",
-            "HOST": "dpg-cjpl3161208c73b02bo0-a.oregon-postgres.render.com",
-            "PORT": "5432",
-        }
+        "default": "postgres://personal_portfolio_lmi5_user:BDUymuhrMmXrgOvTHbZdNl2kM25NtzSV@dpg-cjpl3161208c73b02bo0-a.oregon-postgres.render.com/personal_portfolio_lmi5"
     }
 
 
