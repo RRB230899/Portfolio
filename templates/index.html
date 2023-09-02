@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Harry Potter Progress Bar</title>
+</head>
+<body>
+    <div class="row about-content">
+
+        <div class="col-six tab-full">
+
+            <h3>The Chronicles of Raghav: From Code Spells to Data Potions</h3>
+            <p> Forging a Dual Identity: A Full-Stack Sorcerer and Aspiring Data Alchemist.
+                I conjure insights from datasets, brewing data potions that illuminate hidden patterns.
+            </p>
+
+            <ul class="info-list">
+                <li>
+                    <strong>Fullname:</strong>
+                    <span>Raghav Rajkumar Bajaj</span>
+                </li>
+                <li>
+                    <strong>Birth Date:</strong>
+                    <span>August 23, 1999</span>
+                </li>
+                <li>
+                    <strong>Job:</strong>
+                    <span>Former Full-stack Developer, Data Analytics Intern</span>
+                </li>
+                <li>
+                    <strong>Website:</strong>
+                    <span>www.kardswebsite.com</span>
+                </li>
+                <li>
+                    <strong>Email:</strong>
+                    <span>bajajraghav9@gmail.com</span>
+                </li>
+
+            </ul> <!-- /info-list -->
+
+        </div>
+
+        <div class="col-six tab-full">
+
+            <h3>Mystical Arsenal of Skills</h3>
+            <p>I've honed my skills in two distinct realms. On one hand, I'm a Full-Stack Developer,
+                on the other, I'm an Aspiring Data Scientist.
+                With a stack of tech spells and data incantations, I'm ready to weave magic.
+            </p>
+
+            <ul class="skill-bars">
+                <li class="skill">
+                    <div class="progress percent95"><span>95%</span></div>
+                    <strong>Python</strong>
+                </li>
+                <li class="skill">
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>Django</strong>
+                </li>
+                <li class="skill">
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>MySQL, MongoDB & PostgreSQL</strong>
+                </li>
+                <li class="skill">
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>React</strong>
+                </li>
+                <li class="skill">
+                    <div class="progress percent50"><span style="top: -5em;">50%</span></div>
+                    <strong style="font-size: 1.4rem;">Data Analytics (R, Python, Tableau)</strong>
+                </li>
+                <li class="skill">
+                    <div class="progress percent50"><span style="top: -5em;">50%</span></div>
+                    <strong>Machine Learning Algorithms</strong>
+                </li>
+
+            </ul> <!-- /skill-bars -->
+            <div class="harry-container">
+                <img class="harry harry1" src="{% static 'images/hp.png' %}">
+                <img class="harry harry2" src="{% static 'images/hp.png' %}">
+                <img class="harry harry3" src="{% static 'images/hp.png' %}">
+                <img class="harry harry4" src="{% static 'images/hp.png' %}">
+                <img class="harry harry5" src="{% static 'images/hp.png' %}">
+                <img class="harry harry6" src="{% static 'images/hp.png' %}">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const skills = document.querySelectorAll(".skill");
+    const harries = document.querySelectorAll(".harry");
+    const targetPercents = Array.from(skills).map(skill => parseInt(skill.querySelector(".progress span").textContent)); // Get target percentages
+    const directions = [1, 1, 1, 1, 1, 1]; // 1 for moving right, -1 for moving left
+    const currentPercents = [-6, -6, -6, -6, -6, -6];
+
+    const animateHarry = (index) => {
+        return () => {
+            currentPercents[index] += directions[index];
+            harries[index].style.left = currentPercents[index] + "%";
+
+            if (currentPercents[index] === targetPercents[index] || currentPercents[index] === -6) {
+                directions[index] *= -1; // Change direction when reaching the target or 0
+                if (currentPercents[index] < -6) {
+                    currentPercents[index] = -6;
+                } else if (currentPercents[index] > targetPercents[index]) {
+                    currentPercents[index] = targetPercents[index];
+                }
+            }
+        };
+    };
+
+    // Set individual animation intervals for each Harry
+    for (let i = 0; i < harries.length; i++) {
+        setInterval(animateHarry(i), 250); // Adjust the interval to control the animation speed
+    }
+});
+
+</script>
+</html>
