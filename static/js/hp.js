@@ -214,7 +214,7 @@ function startContinuousArtyom() {
     }).then(function() {
       console.log("Ready to work!");
     });
-  }, 250);
+  }, 5);
 }
 
 startContinuousArtyom();
