@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-2gcaobsuuc-7f-xmqcmo_jthhotx!o@g&y6z1zo#phds+6btv-"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*', '.vercel.app', '.now.sh']
 
@@ -83,12 +83,17 @@ WSGI_APPLICATION = "portfolio.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+if DEBUG:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
     }
-}
+else:
+    DATABASES = {
+        "default": "postgres://personal_portfolio_lmi5_user:BDUymuhrMmXrgOvTHbZdNl2kM25NtzSV@dpg-cjpl3161208c73b02bo0-a.oregon-postgres.render.com/personal_portfolio_lmi5"
+    }
 
 
 # Password validation
