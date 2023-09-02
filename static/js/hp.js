@@ -37,7 +37,34 @@ var commands = [
     }
   },
   {
-    indexes: ["I solomly swear that I am up to no good"],
+    indexes: ["I solemnly swear that I am up to know good"],
+    action: function() {
+      console.log("Welcome.")
+      $('.map-base').addClass('active');
+      $('.main-content').css({'margin': 0, 'text-align': 'left'});
+      $('#wrapper_div').css('display', 'block'); // Add active class
+    }
+  },
+  {
+    indexes: ["I solemnly swear that I am up to no good"],
+    action: function() {
+      console.log("Welcome.")
+      $('.map-base').addClass('active');
+      $('.main-content').css({'margin': 0, 'text-align': 'left'});
+      $('#wrapper_div').css('display', 'block'); // Add active class
+    }
+  },
+  {
+    indexes: ["I so lonely swear that I am up to know good"],
+    action: function() {
+      console.log("Welcome.")
+      $('.map-base').addClass('active');
+      $('.main-content').css({'margin': 0, 'text-align': 'left'});
+      $('#wrapper_div').css('display', 'block');// Add active class
+    }
+  },
+  {
+    indexes: ["I so lonely swear that I am up to no good"],
     action: function() {
       console.log("Welcome.")
       $('.map-base').addClass('active');
