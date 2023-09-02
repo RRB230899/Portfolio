@@ -127,6 +127,42 @@ var commands = [
     }
   },
   {
+    indexes: ["I solemnly swear that I have to know good"],
+    action: function() {
+      console.log("Welcome.")
+      $('.map-base').addClass('active');
+      $('.main-content').css({'margin': 0, 'text-align': 'left'});
+       $('#wrapper_div').css('display', 'block');// Add active class
+    }
+  },
+  {
+    indexes: ["I solemnly swear that I have to no good"],
+    action: function() {
+      console.log("Welcome.")
+      $('.map-base').addClass('active');
+      $('.main-content').css({'margin': 0, 'text-align': 'left'});
+       $('#wrapper_div').css('display', 'block');// Add active class
+    }
+  },
+  {
+    indexes: ["I solely swear that I have to no good"],
+    action: function() {
+      console.log("Welcome.")
+      $('.map-base').addClass('active');
+      $('.main-content').css({'margin': 0, 'text-align': 'left'});
+       $('#wrapper_div').css('display', 'block');// Add active class
+    }
+  },
+  {
+    indexes: ["I solely swear that I have to know good"],
+    action: function() {
+      console.log("Welcome.")
+      $('.map-base').addClass('active');
+      $('.main-content').css({'margin': 0, 'text-align': 'left'});
+       $('#wrapper_div').css('display', 'block');// Add active class
+    }
+  },
+  {
     indexes: ["Mischief managed"],
     action: function() {
       console.log("Mischief managed.")
@@ -171,7 +207,7 @@ function startContinuousArtyom() {
 
   setTimeout(function() {
     artyom.initialize({
-      lang: "en-GB",
+      lang: "en-US",
       continuous: true,
       listen: true,
       speed: 1
