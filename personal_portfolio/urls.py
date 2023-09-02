@@ -5,8 +5,8 @@ from .views import *
 
 
 urlpatterns = [
-    path('', landingView, name="landing page"),
-    path('hp', harryPotterView, name="marauder's map"),
+    path('', harryPotterView, name="marauder's map"),
+    path('hp', landingView, name="landing page"),
     re_path(r'^contactFormRRB', contactFormRRB, name="get in touch")
 ]
 
