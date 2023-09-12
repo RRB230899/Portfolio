@@ -1,8 +1,6 @@
 //toggle button
 $('.js-toggle').on('click', function(){
-  $('html, body').animate({
-    scrollTop: 0
-  }, 500); // Adjust the duration as needed
+  scrollToTheTop();
   $('.map-base').toggleClass('active');
   if ($('.map-base').hasClass('active')){
     $('.main-content').css({'margin': 0, 'text-align': 'left'});
@@ -14,6 +12,11 @@ $('.js-toggle').on('click', function(){
   }
 });
 
+function scrollToTheTop(){
+    $('html, body').animate({
+    scrollTop: 0
+  }, 500); // Adjust the duration as needed
+}
 
 //initialization of speech recognition starts here
 const debugMode = true;
@@ -34,6 +37,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
       $('#wrapper_div').css('display', 'block'); // Add active class
+      scrollToTheTop();
     }
   },
   {
@@ -43,6 +47,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
       $('#wrapper_div').css('display', 'block'); // Add active class
+      scrollToTheTop();
     }
   },
   {
@@ -52,6 +57,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
       $('#wrapper_div').css('display', 'block'); // Add active class
+      scrollToTheTop();
     }
   },
   {
@@ -61,6 +67,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
       $('#wrapper_div').css('display', 'block');// Add active class
+      scrollToTheTop();
     }
   },
   {
@@ -70,6 +77,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
       $('#wrapper_div').css('display', 'block');// Add active class
+      scrollToTheTop();
     }
   },
   {
@@ -79,6 +87,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -88,6 +97,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -97,6 +107,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -106,6 +117,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -115,6 +127,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -124,6 +137,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -133,6 +147,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -142,6 +157,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -151,6 +167,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -160,6 +177,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -169,6 +187,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -178,6 +197,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -187,6 +207,7 @@ var commands = [
       $('.map-base').addClass('active');
       $('.main-content').css({'margin': 0, 'text-align': 'left'});
        $('#wrapper_div').css('display', 'block');// Add active class
+       scrollToTheTop();
     }
   },
   {
@@ -196,6 +217,7 @@ var commands = [
       $('.map-base').removeClass('active');
       $('#wrapper_div').css('display', 'none');
       $('.main-content').css('text-align', 'center');
+      scrollToTheTop();
     }
   },
   {
@@ -205,6 +227,7 @@ var commands = [
       $('.map-base').removeClass('active');
       $('#wrapper_div').css('display', 'none');
       $('.main-content').css('text-align', 'center');
+      scrollToTheTop();
     }
   },
   {
@@ -214,6 +237,7 @@ var commands = [
       $('.map-base').removeClass('active');
       $('#wrapper_div').css('display', 'none');
       $('.main-content').css('text-align', 'center');
+      scrollToTheTop();
     }
   },
   {
@@ -223,6 +247,7 @@ var commands = [
       $('.map-base').removeClass('active');
       $('#wrapper_div').css('display', 'none');
       $('.main-content').css('text-align', 'center');
+      scrollToTheTop();
     }
   },
 ];
@@ -239,9 +264,9 @@ function startContinuousArtyom() {
       listen: true,
       speed: 1
     }).then(function() {
-      console.log("Ready to work!");
+      console.log("Ready to work! Part II.");
     });
-  }, 5);
+  }, 50);
 }
 
 startContinuousArtyom();
