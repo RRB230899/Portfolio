@@ -252,9 +252,7 @@ body {
 	 margin: 30px auto 0;
 	 background: transparent;
 	 font: 34px "Lobster Two", cursive;
-	 padding: 8px 30px;
 	 cursor: pointer;
-	 position: relative;
 	 color: #fff;
 }
  .toggle-map:before {
@@ -264,7 +262,6 @@ body {
 	 height: 51px;
 	 left: 2px;
 	 top: 2px;
-	 border: 2px solid;
 }
  .toggle-map:hover:before {
 	 width: 100%;

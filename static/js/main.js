@@ -241,14 +241,14 @@
 	            // Message was sent
 	            if (msg.code == 200) {
 	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
+	                $('#message-warning').hide();
+	                $('#contactForm').fadeOut();
+	                $('#message-success').fadeIn();
 	            }
 	            // There was an error
 	            else {
 	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
+	                $('#message-warning').html(msg);
 		            $('#message-warning').fadeIn();
 	            }
 
@@ -256,8 +256,8 @@
 		      error: function() {
 
 		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+		      	    $('#message-warning').html("Something went wrong. Please try again.");
+		            $('#message-warning').fadeIn();
 
 		      }
 
