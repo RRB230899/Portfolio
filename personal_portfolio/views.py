@@ -30,6 +30,10 @@ def contactFormRRB(request):
             }
             print(formData)
         except Exception as e:
+            msg = {
+                'response': f'Something went wrong. Error: {e}',
+                'code': 400
+            }
             print('Something went wrong with the form submission. Please try again!', e)
 
     return JsonResponse(msg)

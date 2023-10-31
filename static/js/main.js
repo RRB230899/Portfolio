@@ -235,9 +235,6 @@
 
 		      },
 		      success: function(msg) {
-		        console.log(msg)
-		        console.log(msg.code)
-
 	            // Message was sent
 	            if (msg.code == 200) {
 	            	sLoader.fadeOut(); 
@@ -248,7 +245,7 @@
 	            // There was an error
 	            else {
 	            	sLoader.fadeOut(); 
-	                $('#message-warning').html(msg);
+	                $('#message-warning').html(msg.response);
 		            $('#message-warning').fadeIn();
 	            }
 
