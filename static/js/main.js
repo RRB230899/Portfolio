@@ -12,7 +12,7 @@
 	/*---------------------------------------------------- */
 	/* Preloader
 	------------------------------------------------------ */ 
-   $(window).load(function() {
+   $(document).ready(function() {
 
       // will first fade out the loading animation 
     	$("#loader").fadeOut("slow", function(){
@@ -107,7 +107,7 @@
 
 	containerProjects.imagesLoaded( function() {
 
-		containerProjects.masonry( {		  
+		containerProjects.masonry({
 		  	itemSelector: '.folio-item',
 		  	resize: true 
 		});
