@@ -38,7 +38,7 @@ body {
 	 width: 100%;
 }
  footer a {
-	 text-decoration: none;
+     text-decoration: none;
 	 display: inline-block;
 	 width: 45px;
 	 height: 45px;
@@ -55,6 +55,11 @@ body {
 	 display: inline-block;
 	 font-size: 20px;
 }
+ footer .footer-social a{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
  .main-content {
 	 margin: 8em auto;
 	 overflow-x: hidden;
@@ -170,74 +175,6 @@ body {
 }
  .map-side.side-6 .back {
 	 background-image: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/17.png);
-}
- .scroll-name {
-	 position: absolute;
-	 bottom: 105px;
-	 left: -60px;
-	 width: 150px;
-	 height: 30px;
-	 font: 15px Satisfy, cursive;
-	 text-align: center;
-	 background: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/scroll.svg') center center / cover;
-	 z-index: 10;
-	 color: #615349;
-	 cursor: default;
-	 opacity: 0;
-}
- .scroll-name p {
-	 display: inline-block;
-	 margin: 4px 0 0 15px;
-}
- .footstep {
-	 position: absolute;
-	 background: #615349;
-	 width: 6px;
-	 height: 12px;
-	 border-radius: 80% 80% 70% 70%/130% 130% 25% 25%;
-	 z-index: 10;
-	 opacity: 0;
-}
- .footstep:before {
-	 content: "";
-	 position: absolute;
-	 border-radius: 6px;
-	 width: 5px;
-	 height: 5px;
-	 top: 110%;
-	 left: 0px;
-	 background: #615349;
-	 border-radius: 0 0 100% 100%;
-}
- .footstep.left {
-	 transform: rotate(5deg);
-}
- .footstep.right {
-	 transform: rotate(-3deg) translateY(15px) translateX(10px);
-}
- .footsteps-1 .footstep.left {
-	 bottom: 150px;
-	 left: 18px;
-	 transform: rotate(35deg);
-}
- .footsteps-1 .footstep.right {
-	 bottom: 150px;
-	 left: 28px;
-	 transform: rotate(30deg);
-}
- .footsteps-2 .footstep.left {
-	 bottom: 285px;
-	 left: 280px;
-	 transform: rotate(-90deg);
-}
- .footsteps-2 .footstep.right {
-	 bottom: 275px;
-	 left: 285px;
-	 transform: rotate(-85deg);
-}
- .footsteps-2 .scroll-name {
-	 bottom: 300px;
-	 left: 220px;
 }
  .instructions {
 	 text-align: center;
@@ -373,72 +310,4 @@ body {
 }
  .map-base.active .footsteps-1 .scroll-name {
 	 animation: 15s scroll-1 ease 3s forwards;
-}
- .map-base.active .footsteps-2 .footstep {
-	 animation: 15s footsteps-2 ease 3.2s forwards;
-}
- .map-base.active .footsteps-2 .scroll-name {
-	 animation: 15s scroll-2 ease 3.2s forwards;
-}
- @keyframes footsteps-1 {
-	 10% {
-		 transform: translate(8px, -15px) rotate(30deg);
-	}
-	 20% {
-		 transform: translate(30px, -45px) rotate(30deg);
-	}
-	 30% {
-		 transform: translate(40px, -75px) rotate(20deg);
-	}
-	 40% {
-		 transform: translate(45px, -100px) rotate(10deg);
-	}
-	 50% {
-		 transform: translate(50px, -125px) rotate(10deg);
-	}
-	 60% {
-		 transform: translate(50px, -135px) rotate(10deg);
-	}
-	 100% {
-		 transform: translate(50px, -135px) rotate(20deg);
-	}
-}
- @keyframes footsteps-2 {
-	 80% {
-		 transform: translate(-170px, -25px) rotate(-90deg);
-	}
-	 100% {
-		 transform: translate(-180px, -25px) rotate(-90deg);
-	}
-}
- @keyframes scroll-1 {
-	 10% {
-		 transform: translate(8px, -15px);
-	}
-	 20% {
-		 transform: translate(30px, -45px);
-	}
-	 30% {
-		 transform: translate(40px, -75px);
-	}
-	 40% {
-		 transform: translate(45px, -100px);
-	}
-	 50% {
-		 transform: translate(50px, -125px);
-	}
-	 60% {
-		 transform: translate(50px, -135px);
-	}
-	 100% {
-		 transform: translate(50px, -135px);
-	}
-}
- @keyframes scroll-2 {
-	 80% {
-		 transform: translate(-170px, -25px);
-	}
-	 100% {
-		 transform: translate(-180px, -25px);
-	}
 }
