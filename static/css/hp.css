@@ -210,6 +210,8 @@ body {
 }
  .toggle-map:focus {
 	 outline: none;
+	 color: #fff;
+	 background: transparent;
 }
 .map-base.active{
     width: 100% !important;
