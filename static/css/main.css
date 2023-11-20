@@ -43,22 +43,6 @@ html {
 	font-size: 10px;
 }
 
-@media only screen and (max-width:1024px) {
-	html {
-		font-size: 9.411764705882353px;
-	}
-}
-@media only screen and (max-width:768px) {
-	html {
-		font-size: 10px;
-	}
-}
-@media only screen and (max-width:400px) {
-	html {
-		font-size: 9.411764705882353px;
-	}
-}
-
 html, body {
 	height: 100%;
 }
@@ -1779,12 +1763,12 @@ header .logo a {
  * portfolio
  * ------------------------------------------------------------------- 
  */
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1023px) {
 	#portfolio .folio-title {
 		font-size: 3.1rem;
 	}
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
 	#portfolio .folio-title {
 		font-size: 2.5rem;
 	}
