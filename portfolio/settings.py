@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-2gcaobsuuc-7f-xmqcmo_jthhotx!o@g&y6z1zo#phds+6btv-"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*', '.vercel.app', '.now.sh']
 
@@ -94,7 +94,7 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
-            "NAME": "Portfolio",
+            "NAME": "portfolio_2eba",
             "USER": "severus",
             "PASSWORD": "xJuWhrzaJ6BXxycrLVpJhisBBADhFltV",
             "HOST": "dpg-cmfs3g6g1b2c73cp345g-a.oregon-postgres.render.com",
