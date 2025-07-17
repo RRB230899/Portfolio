@@ -29,228 +29,48 @@ if (debugMode) {
   });
   }
 
-var commands = [
-  {
-    indexes: ["I solemnly swear that I am up to no good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-      $('#wrapper_div').css('display', 'block'); // Add active class
-      scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solemnly swear that I am up to know good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-      $('#wrapper_div').css('display', 'block'); // Add active class
-      scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solemnly swear that I am up to no good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-      $('#wrapper_div').css('display', 'block'); // Add active class
-      scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I so lonely swear that I am up to know good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-      $('#wrapper_div').css('display', 'block');// Add active class
-      scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I so lonely swear that I am up to no good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-      $('#wrapper_div').css('display', 'block');// Add active class
-      scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solomly swear that I am up to know good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["swear that I am up to no good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["swear that I am up to know good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solimly swear that I am up to know good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solimly swear that I am up to no good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solublee  swear that I am up to no good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solublee  swear that I am up to know good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I am up to know good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I am up to no good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solemnly swear that I have to know good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solemnly swear that I have to no good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solely swear that I have to no good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["I solely swear that I have to know good"],
-    action: function() {
-      console.log("Welcome.")
-      $('.map-base').addClass('active');
-      $('.main-content').css({'margin': 0, 'text-align': 'left'});
-       $('#wrapper_div').css('display', 'block');// Add active class
-       scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["Mischief managed"],
-    action: function() {
-      console.log("Mischief managed.")
-      $('.map-base').removeClass('active');
-      $('#wrapper_div').css('display', 'none');
-      $('.main-content').css('text-align', 'center');
-      scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["Mischief manage"],
-    action: function() {
-      console.log("Mischief managed.")
-      $('.map-base').removeClass('active');
-      $('#wrapper_div').css('display', 'none');
-      $('.main-content').css('text-align', 'center');
-      scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["my chief managed"],
-    action: function() {
-      console.log("Mischief managed.")
-      $('.map-base').removeClass('active');
-      $('#wrapper_div').css('display', 'none');
-      $('.main-content').css('text-align', 'center');
-      scrollToTheTop();
-    }
-  },
-  {
-    indexes: ["my chief managed"],
-    action: function() {
-      console.log("Mischief managed.")
-      $('.map-base').removeClass('active');
-      $('#wrapper_div').css('display', 'none');
-      $('.main-content').css('text-align', 'center');
-      scrollToTheTop();
-    }
-  },
+const phrases = [
+  "I solemnly swear that I am up to no good",
+  "I solemnly swear that I am up to know good",
+  "I so lonely swear that I am up to no good",
+  "I so lonely swear that I am up to know good",
+  "I solomly swear that I am up to no good",
+  "I solomly swear that I am up to know good",
+  "I solublee swear that I am up to no good",
+  "I solublee swear that I am up to know good",
+  "I am up to no good",
+  "I am up to know good",
+  "I am up to no good",
+  "I am up to know good",
+  "I am up to no good",
+  "I am up to know good",
+  "I'm up to no good",
+  "I'm up to know good",
+  "I solely swear that I have to no good",
+  "I solely swear that I have to know good",
+  "I solely swear that I have to no good",
+  "I solely swear that I have to know good",
+  "Mischief managed",
+  "Mischief manage",
+  "my chief managed"
 ];
+
+const commands = phrases.map(phrase => ({
+  indexes: [phrase],
+  action: function() {
+    console.log(phrase.includes("Mischief") ? "Mischief managed." : "Welcome.");
+    if (phrase.includes("Mischief")) {
+      $('.map-base').removeClass('active');
+      $('#wrapper_div').css('display', 'none');
+      $('.main-content').css('text-align', 'center');
+    } else {
+      $('.map-base').addClass('active');
+      $('.main-content').css({'margin': 0, 'text-align': 'left'});
+      $('#wrapper_div').css('display', 'block');
+    }
+    scrollToTheTop();
+  }
+}));
 
 artyom.addCommands(commands);
 

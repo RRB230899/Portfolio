@@ -94,14 +94,13 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
-            "NAME": "portfolio_2eba",
-            "USER": "severus",
-            "PASSWORD": "xJuWhrzaJ6BXxycrLVpJhisBBADhFltV",
-            "HOST": "dpg-cmfs3g6g1b2c73cp345g-a.oregon-postgres.render.com",
+            "NAME": "portfolio_uysr",
+            "USER": "portfolio_uysr_user",
+            "PASSWORD": "jQBMuXKjZFSfMhG4QSJzZ2AQAct9sqpk",
+            "HOST": "dpg-d1s3cpnfte5s738kca60-a.oregon-postgres.render.com",
             "PORT": "5432",
         }
     }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

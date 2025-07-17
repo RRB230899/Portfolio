@@ -15,17 +15,9 @@ body {
     background: transparent;
     border-radius: 50%;
     position: absolute;
-    top: 0;
     left: 0;
     transition: left 2s linear; /* Use 'left' for horizontal movement */
 }
-
-.harry1 { left: 0px; top: -445px; } /* Adjust horizontal position */
-.harry2 { left: 0px; top: -379px;} /* Adjust horizontal position */
-.harry3 { left: 0px; top: -313px;} /* Adjust horizontal position */
-.harry4 { left: 0px; top: -247px;} /* Adjust horizontal position */
-.harry5 { left: 0px; top: -181px;} /* Adjust horizontal position */
-.harry6 { left: 0px; top: -115px;} /* Adjust horizontal position */
 
  aside.context {
 	 text-align: center;
