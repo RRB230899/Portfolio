@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "BUILD STARTED"
 
-# Upgrade pip and install dependencies
+# Upgrade pip & install dependencies
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 
