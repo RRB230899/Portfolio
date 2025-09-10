@@ -54,16 +54,10 @@ WSGI_APPLICATION = "portfolio.wsgi.application"
 
 # Database
 if DEBUG:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
-        }
-    }
+    DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": BASE_DIR / "db.sqlite3"}}
 else:
-    DATABASES = {
-        "default": dj_database_url.parse(config("DATABASE_URL"))
-    }
+    # fallback to SQLite on Vercel
+    DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": BASE_DIR / "db.sqlite3"}}
 
 # Static & media files
 STATIC_URL = '/static/'
