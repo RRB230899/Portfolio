@@ -1,11 +1,12 @@
 #!/bin/bash
-echo "BUILD STARTED"
-
-# Upgrade pip & install dependencies
-python -m pip install --upgrade pip
+# 1. Install dependencies
 pip install -r requirements.txt
 
-# Collect static files
+# 2. Collect static files
 python manage.py collectstatic --noinput
 
-echo "BUILD ENDED"
+# 3. Make sure STATIC_ROOT is inside output folder for Vercel
+mkdir -p output/static
+cp -r staticfiles/* output/static/
+
+# 4. Any other setup if needed
