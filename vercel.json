@@ -12,8 +12,5 @@
   "routes": [
     { "src": "/static/(.*)", "dest": "/static/$1" },
     { "src": "/(.*)", "dest": "portfolio/wsgi.py" }
-  ],
-  "hooks": {
-    "build": "bash build_files.sh"
-  }
+  ]
 }
