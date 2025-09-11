@@ -54,11 +54,18 @@ TEMPLATES = [
 WSGI_APPLICATION = "portfolio.wsgi.app"
 
 # Database
-DATABASES = {
-    "default": dj_database_url.config(
-        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}"
-    )
-}
+if DEBUG:
+    DATABASES = {
+        "default": dj_database_url.config(
+            default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}"
+        )
+    }
+else:
+    DATABASES = {
+        "default": dj_database_url.config(
+            default=config("DATABASE_URL")
+        )
+    }
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
