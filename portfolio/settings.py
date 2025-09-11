@@ -76,12 +76,9 @@ USE_TZ = True
 
 # Static & media files
 STATIC_URL = "/static/"
-MEDIA_URL = "/media/"
 
-STATICFILES_DIRS = [BASE_DIR / "static"]
-STATIC_ROOT = BASE_DIR / "staticfiles"
-MEDIA_ROOT = BASE_DIR / "media"
-
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+if os.environ.get("VERCEL"):
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
